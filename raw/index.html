@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>ALL-22 BOWL · Pokémon Football</title>
+  <meta name="description" content="ALL-22 BOWL: a retro pixel-art Pokémon football game. Take your All-22 lineup onto the field against the gyms of Kanto, Johto, Hoenn and Sinnoh." />
+  <meta name="theme-color" content="#0b0d14" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="canonical" href="https://jachiike-madubuko.github.io/all22bowl/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jachiike-madubuko.github.io/all22bowl/" />
+  <meta property="og:title" content="ALL-22 BOWL · Pokémon Football" />
+  <meta property="og:description" content="Retro 11-on-11 Pokémon football. Your All-22 vs the gyms of Kanto, Johto, Hoenn and Sinnoh." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏈</text></svg>" />
+  <link rel="stylesheet" href="bowl.css" />
+  <link rel="stylesheet" href="bowl-modes.css" />
+  <script src="saves.js" data-reload></script>
+  <script src="pokemon.js"></script>
+  <script src="regions.js"></script>
+  <script src="pokedata.js"></script>
+  <script src="draft.js"></script>
+  <script type="module" src="game/main.js"></script>
+</head>
+<body>
+  <canvas id="game" aria-label="ALL-22 BOWL game field"></canvas>
+  <canvas class="crt" aria-hidden="true"></canvas>
+  <div id="ui"></div>
+  <div class="boot" aria-hidden="true"><span class="boot-ball"></span><span class="boot-text">LOADING</span></div>
+  <div class="rotate" aria-hidden="true">
+    <div class="rotate-art"><span class="rotate-phone"></span><span class="rotate-arrow"></span></div>
+    <div class="rotate-text">TURN YOUR PHONE SIDEWAYS</div>
+    <div class="rotate-sub">ALL-22 BOWL plays in landscape</div>
+  </div>
+  <noscript><p class="noscript">ALL-22 BOWL needs JavaScript.</p></noscript>
+</body>
+</html>
